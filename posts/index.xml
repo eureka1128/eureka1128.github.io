@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on ネムリカの記録</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on ネムリカの記録</description>
+    <generator>Hugo -- 0.144.2</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 22 Feb 2025 15:41:51 +0900</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KEK-PH2025の次の日</title>
+      <link>https://example.org/posts/my-first-post/</link>
+      <pubDate>Sat, 22 Feb 2025 15:41:51 +0900</pubDate>
+      <guid>https://example.org/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;休みを捩じ込む&#34;&gt;休みを捩じ込む&lt;/h2&gt;
+&lt;p&gt;2025年に入ってからえらいバタバタと忙しく、精神的にもかなりすり減ってきて、
+今日は休んではいけない日にも関わらず無理やり休養の時間を捻じ込んだ。
+1月末に兼村さんの研究会、その3〜5日後に修論提出、2月19日までにほぼ学振の書類の内容を書かなければいけないspringの応募書類締め切り、
+2月18日から21日までKEK-PHで初めての英語トーク、終わったと思ったらspringから追加の書類の提出を求められた。心のしなやかさが失われ、
+エネルギー切れにより人との関わりを断ちがちになってきたとき、xにて偶然次の文章に出会った。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
