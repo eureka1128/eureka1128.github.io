@@ -15,33 +15,86 @@
       <guid>https://eureka1128.github.io/posts/20250223/</guid>
       <description>&lt;p&gt;研究会と修論で研究が止まっていたので、再始動の前に色々確認。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;今の結果だと$&amp;lsquo;N_2, N_3&amp;rsquo;$からの寄与がある → パラメータを変えれば回避可能。根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。&lt;/li&gt;
-&lt;li&gt;$ \eta $が持つレプトン数について&lt;/li&gt;
-&lt;li&gt;散乱の効果を入れて$K$を小さくする&lt;/li&gt;
+&lt;li&gt;今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。
+根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。&lt;/li&gt;
+&lt;li&gt;$\eta$ が持つレプトン数について&lt;/li&gt;
+&lt;li&gt;散乱の効果を入れて $K$ を小さくする&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;どうすれば論文になるのか？Rackerさんの論文との差別化は？&lt;/p&gt;
+&lt;p&gt;どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？
+タスクの全体像がわからないのでタイムスケジュール感もわからない。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;散乱の計算
 &lt;ul&gt;
-&lt;li&gt;(m_A)を入れて、振幅の二乗の段階でクロスチェック&lt;/li&gt;
-&lt;li&gt;ゼロ温度断面積の(\cos\theta)積分を解析的に計算&lt;/li&gt;
+&lt;li&gt;$m_A$ を入れて、振幅の二乗の段階でクロスチェック&lt;/li&gt;
+&lt;li&gt;ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算&lt;/li&gt;
 &lt;li&gt;解析計算が正しいことを確かめる&lt;/li&gt;
 &lt;li&gt;熱平均断面積の計算&lt;/li&gt;
-&lt;li&gt;他に2つモードがあるので、それらの熱平均断面積も求める((m_A)の質量をmasslessと
+&lt;li&gt;他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと
 していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;ニュートリノ湯川をふる
 &lt;ul&gt;
-&lt;li&gt;右巻きmass,(\eta)のmass,右巻きの階層性,左巻きのmass,(\lambda_5)の値はどうする？&lt;/li&gt;
+&lt;li&gt;右巻きmass, $\eta$ のmass,右巻きの階層性,左巻きのmass, $\lambda_5$ の値はどうする？&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;山中さんにボルツマン方程式を解いてもらう&lt;/li&gt;
-&lt;li&gt;(\cdots)&lt;/li&gt;
+&lt;li&gt;$\cdots$&lt;/li&gt;
 &lt;li&gt;論文を書き始める&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;どういう結論にしたいのか？パラメータ領域の探索？タスクの全体像がわからないのでタイムスケジュール
-感もわからない。&lt;/p&gt;</description>
+&lt;h2 id=&#34;おまけpapermodで数式を導入する&#34;&gt;おまけ：papermodで数式を導入する&lt;/h2&gt;
+&lt;p&gt;ちょっと詰まったので記録しておく。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;themes/papermod/layouts/partials/math.html を作成&lt;/li&gt;
+&lt;li&gt;math.htmlに次の内容をコピー&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;
+&amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+    document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: &amp;#39;$$&amp;#39;, right: &amp;#39;$$&amp;#39;, display: true},
+              {left: &amp;#39;$&amp;#39;, right: &amp;#39;$&amp;#39;, display: false},
+              {left: &amp;#39;\\(&amp;#39;, right: &amp;#39;\\)&amp;#39;, display: false},
+              {left: &amp;#39;\\[&amp;#39;, right: &amp;#39;\\]&amp;#39;, display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; section of every page. */ -}}
+{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+{{ partial &amp;#34;math.html&amp;#34; . }}     # ここを追加
+{{- /* Head custom content area end */ -}}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;contens内のmdファイルに &lt;code&gt;math = true &lt;/code&gt; を追記。例↓&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+++
+date = &amp;#34;2025-02-23T18:42:12+09:00&amp;#34;
+draft = false
+title = &amp;#34;立ち止まって研究の方針を確認&amp;#34;
+math = true  
++++
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;hugo.tomlに以下のように[param]を追記&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;baseURL = &amp;#39;https://eureka1128.github.io/&amp;#39;
+languageCode = &amp;#39;ja-jp&amp;#39;
+title = &amp;#39;ネムリカの記録&amp;#39;
+theme = &amp;#39;PaperMod&amp;#39;
+
+[params]  ##ここの2行を追記
+  math = true  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>KEK-PH2025の次の日</title>
