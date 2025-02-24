@@ -8,20 +8,24 @@
 <title>立ち止まって研究の方針を確認 | ネムリカの記録</title>
 <meta name="keywords" content="">
 <meta name="description" content="研究会と修論で研究が止まっていたので、再始動の前に色々確認。
+抱えている問題
 
 今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。
 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。
 $\eta$ が持つレプトン数について
 散乱の効果を入れて $K$ を小さくする
 
-どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？
+どうすれば論文になるのか？
+Rackerさんの論文との差別化は？
+どういう結論にしたいのか？パラメータ領域の探索？
 タスクの全体像がわからないのでタイムスケジュール感もわからない。
+論文投稿までのロードマップ(とタイムスケジュール)
 
 散乱の計算
 
-$m_A$ を入れて、振幅の二乗の段階でクロスチェック
-ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算
-解析計算が正しいことを確かめる
+$m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み)
+ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み)
+すでに行っている数値計算と比較し、解析計算が正しいことを確かめる
 熱平均断面積の計算
 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと
 していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず)
@@ -36,7 +40,7 @@ $m_A$ を入れて、振幅の二乗の段階でクロスチェック
 $\cdots$
 論文を書き始める
 
-おまけ：papermodで数式を導入する
+おまけ : papermodで数式を導入する
 ちょっと詰まったので記録しておく。
 
 themes/papermod/layouts/partials/math.html を作成
@@ -79,7 +83,7 @@ title = &#34;立ち止まって研究の方針を確認&#34;
 math = true  
 &#43;&#43;&#43;
 
-hugo.tomlに以下のように[param]を追記
+hugo.tomlに以下のように[params]を追記
 
 baseURL = &#39;https://eureka1128.github.io/&#39;
 languageCode = &#39;ja-jp&#39;
@@ -88,7 +92,7 @@ theme = &#39;PaperMod&#39;
 
 [params]  ##ここの2行を追記
   math = true  
-これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。">
+これでうまくいきました。">
 <meta name="author" content="">
 <link rel="canonical" href="https://eureka1128.github.io/posts/20250223/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
@@ -158,9 +162,9 @@ theme = &#39;PaperMod&#39;
   <meta property="og:site_name" content="ネムリカの記録">
   <meta property="og:title" content="立ち止まって研究の方針を確認">
   <meta property="og:description" content="研究会と修論で研究が止まっていたので、再始動の前に色々確認。
-今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。
-散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算 解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\eta$ のmass,右巻きの階層性,左巻きのmass, $\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\cdots$ 論文を書き始める おまけ：papermodで数式を導入する ちょっと詰まったので記録しておく。
-themes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css&#34; integrity=&#34;sha384-zh0CIslj&#43;VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib&#34; crossorigin=&#34;anonymous&#34;&gt; &lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js&#34; integrity=&#34;sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt; &lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js&#34; integrity=&#34;sha384-hCXGrW6PitJEwbkoStFjeJxv&#43;fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt; &lt;script&gt; document.addEventListener(&#34;DOMContentLoaded&#34;, function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: &#39;$$&#39;, right: &#39;$$&#39;, display: true}, {left: &#39;$&#39;, right: &#39;$&#39;, display: false}, {left: &#39;\\(&#39;, right: &#39;\\)&#39;, display: false}, {left: &#39;\\[&#39;, right: &#39;\\]&#39;, display: true} ], // • rendering keys, e.g.: throwOnError : false }); }); &lt;/script&gt; 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the &lt;head&gt;&lt;/head&gt; section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial &#34;math.html&#34; . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ &#43;&#43;&#43; date = &#34;2025-02-23T18:42:12&#43;09:00&#34; draft = false title = &#34;立ち止まって研究の方針を確認&#34; math = true &#43;&#43;&#43; hugo.tomlに以下のように[param]を追記 baseURL = &#39;https://eureka1128.github.io/&#39; languageCode = &#39;ja-jp&#39; title = &#39;ネムリカの記録&#39; theme = &#39;PaperMod&#39; [params] ##ここの2行を追記 math = true これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。">
+抱えている問題 今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？ Rackerさんの論文との差別化は？ どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。
+論文投稿までのロードマップ(とタイムスケジュール) 散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み) ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み) すでに行っている数値計算と比較し、解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\eta$ のmass,右巻きの階層性,左巻きのmass, $\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\cdots$ 論文を書き始める おまけ : papermodで数式を導入する ちょっと詰まったので記録しておく。
+themes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css&#34; integrity=&#34;sha384-zh0CIslj&#43;VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib&#34; crossorigin=&#34;anonymous&#34;&gt; &lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js&#34; integrity=&#34;sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt; &lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js&#34; integrity=&#34;sha384-hCXGrW6PitJEwbkoStFjeJxv&#43;fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt; &lt;script&gt; document.addEventListener(&#34;DOMContentLoaded&#34;, function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: &#39;$$&#39;, right: &#39;$$&#39;, display: true}, {left: &#39;$&#39;, right: &#39;$&#39;, display: false}, {left: &#39;\\(&#39;, right: &#39;\\)&#39;, display: false}, {left: &#39;\\[&#39;, right: &#39;\\]&#39;, display: true} ], // • rendering keys, e.g.: throwOnError : false }); }); &lt;/script&gt; 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the &lt;head&gt;&lt;/head&gt; section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial &#34;math.html&#34; . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ &#43;&#43;&#43; date = &#34;2025-02-23T18:42:12&#43;09:00&#34; draft = false title = &#34;立ち止まって研究の方針を確認&#34; math = true &#43;&#43;&#43; hugo.tomlに以下のように[params]を追記 baseURL = &#39;https://eureka1128.github.io/&#39; languageCode = &#39;ja-jp&#39; title = &#39;ネムリカの記録&#39; theme = &#39;PaperMod&#39; [params] ##ここの2行を追記 math = true これでうまくいきました。">
   <meta property="og:locale" content="ja-jp">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -169,20 +173,24 @@ themes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容を
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="立ち止まって研究の方針を確認">
 <meta name="twitter:description" content="研究会と修論で研究が止まっていたので、再始動の前に色々確認。
+抱えている問題
 
 今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。
 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。
 $\eta$ が持つレプトン数について
 散乱の効果を入れて $K$ を小さくする
 
-どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？
+どうすれば論文になるのか？
+Rackerさんの論文との差別化は？
+どういう結論にしたいのか？パラメータ領域の探索？
 タスクの全体像がわからないのでタイムスケジュール感もわからない。
+論文投稿までのロードマップ(とタイムスケジュール)
 
 散乱の計算
 
-$m_A$ を入れて、振幅の二乗の段階でクロスチェック
-ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算
-解析計算が正しいことを確かめる
+$m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み)
+ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み)
+すでに行っている数値計算と比較し、解析計算が正しいことを確かめる
 熱平均断面積の計算
 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと
 していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず)
@@ -197,7 +205,7 @@ $m_A$ を入れて、振幅の二乗の段階でクロスチェック
 $\cdots$
 論文を書き始める
 
-おまけ：papermodで数式を導入する
+おまけ : papermodで数式を導入する
 ちょっと詰まったので記録しておく。
 
 themes/papermod/layouts/partials/math.html を作成
@@ -240,7 +248,7 @@ title = &#34;立ち止まって研究の方針を確認&#34;
 math = true  
 &#43;&#43;&#43;
 
-hugo.tomlに以下のように[param]を追記
+hugo.tomlに以下のように[params]を追記
 
 baseURL = &#39;https://eureka1128.github.io/&#39;
 languageCode = &#39;ja-jp&#39;
@@ -249,7 +257,7 @@ theme = &#39;PaperMod&#39;
 
 [params]  ##ここの2行を追記
   math = true  
-これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。">
+これでうまくいきました。">
 
 
 <script type="application/ld+json">
@@ -278,12 +286,12 @@ theme = &#39;PaperMod&#39;
   "@type": "BlogPosting",
   "headline": "立ち止まって研究の方針を確認",
   "name": "立ち止まって研究の方針を確認",
-  "description": "研究会と修論で研究が止まっていたので、再始動の前に色々確認。\n今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。\n散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック ゼロ温度断面積の $\\cos\\theta$ 積分を解析的に計算 解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\\eta$ のmass,右巻きの階層性,左巻きのmass, $\\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\\cdots$ 論文を書き始める おまけ：papermodで数式を導入する ちょっと詰まったので記録しておく。\nthemes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css\u0026#34; integrity=\u0026#34;sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt; \u0026lt;script defer src=\u0026#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js\u0026#34; integrity=\u0026#34;sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script defer src=\u0026#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js\u0026#34; integrity=\u0026#34;sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script\u0026gt; document.addEventListener(\u0026#34;DOMContentLoaded\u0026#34;, function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: \u0026#39;$$\u0026#39;, right: \u0026#39;$$\u0026#39;, display: true}, {left: \u0026#39;$\u0026#39;, right: \u0026#39;$\u0026#39;, display: false}, {left: \u0026#39;\\\\(\u0026#39;, right: \u0026#39;\\\\)\u0026#39;, display: false}, {left: \u0026#39;\\\\[\u0026#39;, right: \u0026#39;\\\\]\u0026#39;, display: true} ], // • rendering keys, e.g.: throwOnError : false }); }); \u0026lt;/script\u0026gt; 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the \u0026lt;head\u0026gt;\u0026lt;/head\u0026gt; section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial \u0026#34;math.html\u0026#34; . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ +++ date = \u0026#34;2025-02-23T18:42:12+09:00\u0026#34; draft = false title = \u0026#34;立ち止まって研究の方針を確認\u0026#34; math = true +++ hugo.tomlに以下のように[param]を追記 baseURL = \u0026#39;https://eureka1128.github.io/\u0026#39; languageCode = \u0026#39;ja-jp\u0026#39; title = \u0026#39;ネムリカの記録\u0026#39; theme = \u0026#39;PaperMod\u0026#39; [params] ##ここの2行を追記 math = true これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。\n",
+  "description": "研究会と修論で研究が止まっていたので、再始動の前に色々確認。\n抱えている問題 今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？ Rackerさんの論文との差別化は？ どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。\n論文投稿までのロードマップ(とタイムスケジュール) 散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み) ゼロ温度断面積の $\\cos\\theta$ 積分を解析的に計算(済み) すでに行っている数値計算と比較し、解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\\eta$ のmass,右巻きの階層性,左巻きのmass, $\\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\\cdots$ 論文を書き始める おまけ : papermodで数式を導入する ちょっと詰まったので記録しておく。\nthemes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css\u0026#34; integrity=\u0026#34;sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt; \u0026lt;script defer src=\u0026#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js\u0026#34; integrity=\u0026#34;sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script defer src=\u0026#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js\u0026#34; integrity=\u0026#34;sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script\u0026gt; document.addEventListener(\u0026#34;DOMContentLoaded\u0026#34;, function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: \u0026#39;$$\u0026#39;, right: \u0026#39;$$\u0026#39;, display: true}, {left: \u0026#39;$\u0026#39;, right: \u0026#39;$\u0026#39;, display: false}, {left: \u0026#39;\\\\(\u0026#39;, right: \u0026#39;\\\\)\u0026#39;, display: false}, {left: \u0026#39;\\\\[\u0026#39;, right: \u0026#39;\\\\]\u0026#39;, display: true} ], // • rendering keys, e.g.: throwOnError : false }); }); \u0026lt;/script\u0026gt; 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the \u0026lt;head\u0026gt;\u0026lt;/head\u0026gt; section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial \u0026#34;math.html\u0026#34; . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ +++ date = \u0026#34;2025-02-23T18:42:12+09:00\u0026#34; draft = false title = \u0026#34;立ち止まって研究の方針を確認\u0026#34; math = true +++ hugo.tomlに以下のように[params]を追記 baseURL = \u0026#39;https://eureka1128.github.io/\u0026#39; languageCode = \u0026#39;ja-jp\u0026#39; title = \u0026#39;ネムリカの記録\u0026#39; theme = \u0026#39;PaperMod\u0026#39; [params] ##ここの2行を追記 math = true これでうまくいきました。\n",
   "keywords": [
     
   ],
-  "articleBody": "研究会と修論で研究が止まっていたので、再始動の前に色々確認。\n今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。\n散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック ゼロ温度断面積の $\\cos\\theta$ 積分を解析的に計算 解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\\eta$ のmass,右巻きの階層性,左巻きのmass, $\\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\\cdots$ 論文を書き始める おまけ：papermodで数式を導入する ちょっと詰まったので記録しておく。\nthemes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial \"math.html\" . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ +++ date = \"2025-02-23T18:42:12+09:00\" draft = false title = \"立ち止まって研究の方針を確認\" math = true +++ hugo.tomlに以下のように[param]を追記 baseURL = 'https://eureka1128.github.io/' languageCode = 'ja-jp' title = 'ネムリカの記録' theme = 'PaperMod' [params] ##ここの2行を追記 math = true これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。\nおまけ2：バッククォート macではshift + @でバッククォートが打てます。\n",
-  "wordCount" : "217",
+  "articleBody": "研究会と修論で研究が止まっていたので、再始動の前に色々確認。\n抱えている問題 今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？ Rackerさんの論文との差別化は？ どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。\n論文投稿までのロードマップ(とタイムスケジュール) 散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み) ゼロ温度断面積の $\\cos\\theta$ 積分を解析的に計算(済み) すでに行っている数値計算と比較し、解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\\eta$ のmass,右巻きの階層性,左巻きのmass, $\\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\\cdots$ 論文を書き始める おまけ : papermodで数式を導入する ちょっと詰まったので記録しておく。\nthemes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial \"math.html\" . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ +++ date = \"2025-02-23T18:42:12+09:00\" draft = false title = \"立ち止まって研究の方針を確認\" math = true +++ hugo.tomlに以下のように[params]を追記 baseURL = 'https://eureka1128.github.io/' languageCode = 'ja-jp' title = 'ネムリカの記録' theme = 'PaperMod' [params] ##ここの2行を追記 math = true これでうまくいきました。\n参考 Math Typesetting Auto-render Extension – KaTeX\nおまけ2 : バッククォート macではshift + @でバッククォートが打てる。\n",
+  "wordCount" : "231",
   "inLanguage": "en",
   "datePublished": "2025-02-23T18:42:12+09:00",
   "dateModified": "2025-02-23T18:42:12+09:00",
@@ -359,20 +367,24 @@ theme = &#39;PaperMod&#39;
 </div>
   </header> 
   <div class="post-content"><p>研究会と修論で研究が止まっていたので、再始動の前に色々確認。</p>
+<h3 id="抱えている問題">抱えている問題<a hidden class="anchor" aria-hidden="true" href="#抱えている問題">#</a></h3>
 <ul>
 <li>今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。
 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。</li>
 <li>$\eta$ が持つレプトン数について</li>
 <li>散乱の効果を入れて $K$ を小さくする</li>
 </ul>
-<p>どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？
+<p>どうすれば論文になるのか？
+Rackerさんの論文との差別化は？
+どういう結論にしたいのか？パラメータ領域の探索？
 タスクの全体像がわからないのでタイムスケジュール感もわからない。</p>
+<h3 id="論文投稿までのロードマップとタイムスケジュール">論文投稿までのロードマップ(とタイムスケジュール)<a hidden class="anchor" aria-hidden="true" href="#論文投稿までのロードマップとタイムスケジュール">#</a></h3>
 <ol>
 <li>散乱の計算
 <ul>
-<li>$m_A$ を入れて、振幅の二乗の段階でクロスチェック</li>
-<li>ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算</li>
-<li>解析計算が正しいことを確かめる</li>
+<li>$m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み)</li>
+<li>ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み)</li>
+<li>すでに行っている数値計算と比較し、解析計算が正しいことを確かめる</li>
 <li>熱平均断面積の計算</li>
 <li>他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと
 していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず)</li>
@@ -387,7 +399,7 @@ theme = &#39;PaperMod&#39;
 <li>$\cdots$</li>
 <li>論文を書き始める</li>
 </ol>
-<h2 id="おまけpapermodで数式を導入する">おまけ：papermodで数式を導入する<a hidden class="anchor" aria-hidden="true" href="#おまけpapermodで数式を導入する">#</a></h2>
+<h2 id="おまけ--papermodで数式を導入する">おまけ : papermodで数式を導入する<a hidden class="anchor" aria-hidden="true" href="#おまけ--papermodで数式を導入する">#</a></h2>
 <p>ちょっと詰まったので記録しておく。</p>
 <ol>
 <li>themes/papermod/layouts/partials/math.html を作成</li>
@@ -430,7 +442,7 @@ title = &#34;立ち止まって研究の方針を確認&#34;
 math = true  
 +++
 </code></pre><ol start="5">
-<li>hugo.tomlに以下のように[param]を追記</li>
+<li>hugo.tomlに以下のように[params]を追記</li>
 </ol>
 <pre tabindex="0"><code>baseURL = &#39;https://eureka1128.github.io/&#39;
 languageCode = &#39;ja-jp&#39;
@@ -439,9 +451,12 @@ theme = &#39;PaperMod&#39;
 
 [params]  ##ここの2行を追記
   math = true  
-</code></pre><p>これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。</p>
-<h2 id="おまけ2バッククォート">おまけ2：バッククォート<a hidden class="anchor" aria-hidden="true" href="#おまけ2バッククォート">#</a></h2>
-<p>macでは<code>shift + @</code>でバッククォートが打てます。</p>
+</code></pre><p>これでうまくいきました。</p>
+<p>参考
+<a href="https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/">Math Typesetting</a>
+<a href="https://katex.org/docs/autorender.html">Auto-render Extension &ndash; KaTeX</a></p>
+<h2 id="おまけ2--バッククォート">おまけ2 : バッククォート<a hidden class="anchor" aria-hidden="true" href="#おまけ2--バッククォート">#</a></h2>
+<p>macでは<code>shift + @</code>でバッククォートが打てる。</p>
 
 
   </div>

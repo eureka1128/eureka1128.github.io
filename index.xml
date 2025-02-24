@@ -14,20 +14,24 @@
       <pubDate>Sun, 23 Feb 2025 18:42:12 +0900</pubDate>
       <guid>https://eureka1128.github.io/posts/20250223/</guid>
       <description>&lt;p&gt;研究会と修論で研究が止まっていたので、再始動の前に色々確認。&lt;/p&gt;
+&lt;h3 id=&#34;抱えている問題&#34;&gt;抱えている問題&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。
 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。&lt;/li&gt;
 &lt;li&gt;$\eta$ が持つレプトン数について&lt;/li&gt;
 &lt;li&gt;散乱の効果を入れて $K$ を小さくする&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;どうすれば論文になるのか？Rackerさんの論文との差別化は？どういう結論にしたいのか？パラメータ領域の探索？
+&lt;p&gt;どうすれば論文になるのか？
+Rackerさんの論文との差別化は？
+どういう結論にしたいのか？パラメータ領域の探索？
 タスクの全体像がわからないのでタイムスケジュール感もわからない。&lt;/p&gt;
+&lt;h3 id=&#34;論文投稿までのロードマップとタイムスケジュール&#34;&gt;論文投稿までのロードマップ(とタイムスケジュール)&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;散乱の計算
 &lt;ul&gt;
-&lt;li&gt;$m_A$ を入れて、振幅の二乗の段階でクロスチェック&lt;/li&gt;
-&lt;li&gt;ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算&lt;/li&gt;
-&lt;li&gt;解析計算が正しいことを確かめる&lt;/li&gt;
+&lt;li&gt;$m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み)&lt;/li&gt;
+&lt;li&gt;ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み)&lt;/li&gt;
+&lt;li&gt;すでに行っている数値計算と比較し、解析計算が正しいことを確かめる&lt;/li&gt;
 &lt;li&gt;熱平均断面積の計算&lt;/li&gt;
 &lt;li&gt;他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと
 していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず)&lt;/li&gt;
@@ -42,7 +46,7 @@
 &lt;li&gt;$\cdots$&lt;/li&gt;
 &lt;li&gt;論文を書き始める&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;おまけpapermodで数式を導入する&#34;&gt;おまけ：papermodで数式を導入する&lt;/h2&gt;
+&lt;h2 id=&#34;おまけ--papermodで数式を導入する&#34;&gt;おまけ : papermodで数式を導入する&lt;/h2&gt;
 &lt;p&gt;ちょっと詰まったので記録しておく。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;themes/papermod/layouts/partials/math.html を作成&lt;/li&gt;
@@ -85,7 +89,7 @@ title = &amp;#34;立ち止まって研究の方針を確認&amp;#34;
 math = true  
 +++
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;hugo.tomlに以下のように[param]を追記&lt;/li&gt;
+&lt;li&gt;hugo.tomlに以下のように[params]を追記&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;baseURL = &amp;#39;https://eureka1128.github.io/&amp;#39;
 languageCode = &amp;#39;ja-jp&amp;#39;
@@ -94,7 +98,7 @@ theme = &amp;#39;PaperMod&amp;#39;
 
 [params]  ##ここの2行を追記
   math = true  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;これで、キャッシュのクリアなりhugo serverの再立ち上げなりをするとうまくいきました。&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;これでうまくいきました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>KEK-PH2025の次の日</title>
