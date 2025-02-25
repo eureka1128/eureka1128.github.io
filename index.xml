@@ -9,22 +9,10 @@
     <lastBuildDate>Mon, 24 Feb 2025 14:27:12 +0900</lastBuildDate>
     <atom:link href="https://eureka1128.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>KEK-PH2025の次の日</title>
-      <link>https://eureka1128.github.io/posts/20250222/</link>
-      <pubDate>Sat, 22 Feb 2025 15:41:51 +0900</pubDate>
-      <guid>https://eureka1128.github.io/posts/20250222/</guid>
-      <description>&lt;h2 id=&#34;休みを捩じ込む&#34;&gt;休みを捩じ込む&lt;/h2&gt;
-&lt;p&gt;2025年に入ってからえらいバタバタと忙しく、精神的にもかなりすり減ってきて、
-今日は休んではいけない日にも関わらず無理やり休養の時間を捻じ込んだ。
-1月末に阪大での研究会、その3〜5日後に修論提出、2月14日に修論発表、2月19日までにほぼ学振の書類の内容を書かなければいけないspringの応募書類締め切り、
-2月18日から21日までKEK-PHで初めての英語トーク、終わったと思ったらspringから追加の書類の提出を求められた。心の余裕が次第に無くなっていき、
-エネルギー切れにより人との関わりを断ちがちになってきたとき、xにて偶然次の文章に出会った。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>散乱のゼロ温度断面積</title>
-      <link>https://eureka1128.github.io/posts/20250224/</link>
+      <link>https://eureka1128.github.io/posts/20250225/</link>
       <pubDate>Mon, 24 Feb 2025 14:27:12 +0900</pubDate>
-      <guid>https://eureka1128.github.io/posts/20250224/</guid>
+      <guid>https://eureka1128.github.io/posts/20250225/</guid>
       <description>&lt;p&gt;$\cos\theta$ での解析積分を実行して、ゼロ温度断面積を求めたい。
 元々ゼロ温度断面積は数値積分を行っていたのだが、レプトンが飛ぶ項に関して $s=M_1$ 付近に発散があった(詳細はtexを。これもややこしい話なので)。&lt;/p&gt;
 &lt;p&gt;この処理のために $m_A^2\neq 0$ としてゲージボソンに微小な質量を持たせることにしたが、それでもピークが鋭く、区分求積の短冊の幅を限界まで小さくしても積分値が収束しない。そこで、解析的に積分を行うことにした。&lt;/p&gt;
@@ -43,8 +31,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;数値積分
--$m_A$ を考慮できていない&lt;/p&gt;
+&lt;p&gt;数値積分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$m_A^2$ を残した式に置き換えがまだできていない&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;レプトンが飛ぶ項&lt;/p&gt;
@@ -56,16 +46,16 @@
 &lt;li&gt;
 &lt;p&gt;高温極限&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$m_A$ ありバージョンでの解析式はまだ導出できていない&lt;/li&gt;
+&lt;li&gt;$m_A^2$ ありバージョンでの解析式はまだ導出できていない&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
-      <title>立ち止まって研究の方針を確認</title>
-      <link>https://eureka1128.github.io/posts/20250223/</link>
-      <pubDate>Sun, 23 Feb 2025 18:42:12 +0900</pubDate>
-      <guid>https://eureka1128.github.io/posts/20250223/</guid>
+      <title>立ち止まって研究方針を確認</title>
+      <link>https://eureka1128.github.io/posts/20250224/</link>
+      <pubDate>Mon, 24 Feb 2025 14:27:12 +0900</pubDate>
+      <guid>https://eureka1128.github.io/posts/20250224/</guid>
       <description>&lt;p&gt;研究会と修論で研究が止まっていたので、再始動の前に色々確認。&lt;/p&gt;
 &lt;h3 id=&#34;抱えている問題&#34;&gt;抱えている問題&lt;/h3&gt;
 &lt;ul&gt;
@@ -98,60 +88,62 @@ Rackerさんの論文との差別化は？
 &lt;li&gt;山中さんにボルツマン方程式を解いてもらう&lt;/li&gt;
 &lt;li&gt;$\cdots$&lt;/li&gt;
 &lt;li&gt;論文を書き始める&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;おまけ--papermodで数式を導入する&#34;&gt;おまけ : papermodで数式を導入する&lt;/h2&gt;
-&lt;p&gt;ちょっと詰まったので記録しておく。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;themes/papermod/layouts/partials/math.html を作成&lt;/li&gt;
-&lt;li&gt;math.htmlに次の内容をコピー&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;
-&amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;
-    document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() {
-        renderMathInElement(document.body, {
-          // customised options
-          // • auto-render specific keys, e.g.:
-          delimiters: [
-              {left: &amp;#39;$$&amp;#39;, right: &amp;#39;$$&amp;#39;, display: true},
-              {left: &amp;#39;$&amp;#39;, right: &amp;#39;$&amp;#39;, display: false},
-              {left: &amp;#39;\\(&amp;#39;, right: &amp;#39;\\)&amp;#39;, display: false},
-              {left: &amp;#39;\\[&amp;#39;, right: &amp;#39;\\]&amp;#39;, display: true}
-          ],
-          // • rendering keys, e.g.:
-          throwOnError : false
-        });
-    });
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{- /* Head custom content area start */ -}}
-{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; section of every page. */ -}}
-{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
-{{ partial &amp;#34;math.html&amp;#34; . }}     # ここを追加
-{{- /* Head custom content area end */ -}}
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;contens内のmdファイルに &lt;code&gt;math = true &lt;/code&gt; を追記。例↓&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>PaperModの諸設定</title>
+      <link>https://eureka1128.github.io/posts/20250223/</link>
+      <pubDate>Sun, 23 Feb 2025 18:42:12 +0900</pubDate>
+      <guid>https://eureka1128.github.io/posts/20250223/</guid>
+      <description>&lt;h3 id=&#34;記事に目次を導入する&#34;&gt;記事に目次を導入する&lt;/h3&gt;
+&lt;p&gt;記事に &lt;code&gt;ShowToc = true &lt;/code&gt; を追記。例 ↓&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+++
-date = &amp;#34;2025-02-23T18:42:12+09:00&amp;#34;
+date = &amp;#39;2025-02-22T15:41:51+09:00&amp;#39;
 draft = false
-title = &amp;#34;立ち止まって研究の方針を確認&amp;#34;
-math = true  
+title = &amp;#39;KEK-PH2025の次の日&amp;#39;
+ShowToc = true  #ここを追記
 +++
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;hugo.tomlに以下のように[params]を追記&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;baseURL = &amp;#39;https://eureka1128.github.io/&amp;#39;
-languageCode = &amp;#39;ja-jp&amp;#39;
-title = &amp;#39;ネムリカの記録&amp;#39;
-theme = &amp;#39;PaperMod&amp;#39;
-
-[params]  ##ここの2行を追記
-  math = true  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;これでうまくいきました。&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;右上にarchiveを導入する&#34;&gt;右上にarchiveを導入する&lt;/h3&gt;
+&lt;p&gt;content/archives.md を作り、次の内容を書き込む。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
+title: &amp;#34;Archive&amp;#34;
+layout: &amp;#34;archives&amp;#34;
+url: &amp;#34;/archives/&amp;#34;
+summary: archives
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;hugo.tomlに以下の内容を追記。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[[menu.main]]
+identifier = &amp;#34;archives&amp;#34;
+name = &amp;#34;Archive&amp;#34;
+url = &amp;#34;/archives/&amp;#34;
+weight = 10
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;参考:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#archives-layout&#34;&gt;Archives Layout &amp;ndash; PaperMod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;右上にtagを導入する&#34;&gt;右上にtagを導入する&lt;/h3&gt;
+&lt;p&gt;content/tags/_index.md を作り、次の内容を書き込む。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
+title: &amp;#34;Tags&amp;#34;
+date: 2025-02-25T19:10:49+09:00
+draft: false
+description: Example description.
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;各記事に &lt;code&gt;tags = [&#39;Tag A&#39;, &#39;Tag B&#39;]&lt;/code&gt; を追記。例 ↓&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KEK-PH2025の次の日</title>
+      <link>https://eureka1128.github.io/posts/20250222/</link>
+      <pubDate>Sat, 22 Feb 2025 15:41:51 +0900</pubDate>
+      <guid>https://eureka1128.github.io/posts/20250222/</guid>
+      <description>&lt;h3 id=&#34;休みを捩じ込む&#34;&gt;休みを捩じ込む&lt;/h3&gt;
+&lt;p&gt;2025年に入ってからえらいバタバタと忙しく、精神的にもかなりすり減ってきて、
+今日は休んではいけない日にも関わらず無理やり休養の時間を捻じ込んだ。
+1月末に阪大での研究会、その3〜5日後に修論提出、2月14日に修論発表、2月19日までにほぼ学振の書類の内容を書かなければいけないspringの応募書類締め切り、
+2月18日から21日までKEK-PHで初めての英語トーク、終わったと思ったらspringから追加の書類の提出を求められた。心の余裕が次第に無くなっていき、
+エネルギー切れにより人との関わりを断ちがちになってきたとき、xにて偶然次の文章に出会った。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

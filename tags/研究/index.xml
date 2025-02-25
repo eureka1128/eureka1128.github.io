@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on ネムリカの記録</title>
-    <link>https://eureka1128.github.io/posts/</link>
-    <description>Recent content in Posts on ネムリカの記録</description>
+    <title>研究 on ネムリカの記録</title>
+    <link>https://eureka1128.github.io/tags/%E7%A0%94%E7%A9%B6/</link>
+    <description>Recent content in 研究 on ネムリカの記録</description>
     <generator>Hugo -- 0.144.2</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 24 Feb 2025 14:27:12 +0900</lastBuildDate>
-    <atom:link href="https://eureka1128.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://eureka1128.github.io/tags/%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>散乱のゼロ温度断面積</title>
       <link>https://eureka1128.github.io/posts/20250225/</link>
@@ -89,61 +89,6 @@ Rackerさんの論文との差別化は？
 &lt;li&gt;$\cdots$&lt;/li&gt;
 &lt;li&gt;論文を書き始める&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    <item>
-      <title>PaperModの諸設定</title>
-      <link>https://eureka1128.github.io/posts/20250223/</link>
-      <pubDate>Sun, 23 Feb 2025 18:42:12 +0900</pubDate>
-      <guid>https://eureka1128.github.io/posts/20250223/</guid>
-      <description>&lt;h3 id=&#34;記事に目次を導入する&#34;&gt;記事に目次を導入する&lt;/h3&gt;
-&lt;p&gt;記事に &lt;code&gt;ShowToc = true &lt;/code&gt; を追記。例 ↓&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+++
-date = &amp;#39;2025-02-22T15:41:51+09:00&amp;#39;
-draft = false
-title = &amp;#39;KEK-PH2025の次の日&amp;#39;
-ShowToc = true  #ここを追記
-+++
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;右上にarchiveを導入する&#34;&gt;右上にarchiveを導入する&lt;/h3&gt;
-&lt;p&gt;content/archives.md を作り、次の内容を書き込む。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
-title: &amp;#34;Archive&amp;#34;
-layout: &amp;#34;archives&amp;#34;
-url: &amp;#34;/archives/&amp;#34;
-summary: archives
----
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;hugo.tomlに以下の内容を追記。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[[menu.main]]
-identifier = &amp;#34;archives&amp;#34;
-name = &amp;#34;Archive&amp;#34;
-url = &amp;#34;/archives/&amp;#34;
-weight = 10
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;参考:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#archives-layout&#34;&gt;Archives Layout &amp;ndash; PaperMod&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;右上にtagを導入する&#34;&gt;右上にtagを導入する&lt;/h3&gt;
-&lt;p&gt;content/tags/_index.md を作り、次の内容を書き込む。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
-title: &amp;#34;Tags&amp;#34;
-date: 2025-02-25T19:10:49+09:00
-draft: false
-description: Example description.
----
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;各記事に &lt;code&gt;tags = [&#39;Tag A&#39;, &#39;Tag B&#39;]&lt;/code&gt; を追記。例 ↓&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>KEK-PH2025の次の日</title>
-      <link>https://eureka1128.github.io/posts/20250222/</link>
-      <pubDate>Sat, 22 Feb 2025 15:41:51 +0900</pubDate>
-      <guid>https://eureka1128.github.io/posts/20250222/</guid>
-      <description>&lt;h3 id=&#34;休みを捩じ込む&#34;&gt;休みを捩じ込む&lt;/h3&gt;
-&lt;p&gt;2025年に入ってからえらいバタバタと忙しく、精神的にもかなりすり減ってきて、
-今日は休んではいけない日にも関わらず無理やり休養の時間を捻じ込んだ。
-1月末に阪大での研究会、その3〜5日後に修論提出、2月14日に修論発表、2月19日までにほぼ学振の書類の内容を書かなければいけないspringの応募書類締め切り、
-2月18日から21日までKEK-PHで初めての英語トーク、終わったと思ったらspringから追加の書類の提出を求められた。心の余裕が次第に無くなっていき、
-エネルギー切れにより人との関わりを断ちがちになってきたとき、xにて偶然次の文章に出会った。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

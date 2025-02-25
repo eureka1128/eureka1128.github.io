@@ -140,6 +140,16 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://eureka1128.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://eureka1128.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -152,6 +162,57 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">散乱のゼロ温度断面積
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>$\cos\theta$ での解析積分を実行して、ゼロ温度断面積を求めたい。 元々ゼロ温度断面積は数値積分を行っていたのだが、レプトンが飛ぶ項に関して $s=M_1$ 付近に発散があった(詳細はtexを。これもややこしい話なので)。
+この処理のために $m_A^2\neq 0$ としてゲージボソンに微小な質量を持たせることにしたが、それでもピークが鋭く、区分求積の短冊の幅を限界まで小さくしても積分値が収束しない。そこで、解析的に積分を行うことにした。
+解析積分の進捗状況 振幅の二乗
+山中さんの式と一致。クロスチェック完了 $\eta$ が飛ぶ項と干渉項の和
+解析積分の結果が数値積分の結果と合わない 数値積分
+$m_A^2$ を残した式に置き換えがまだできていない レプトンが飛ぶ項
+解析積分の表式はmathematicaの結果と一致。 しかし、数値を出力すると、$m_A$ の依存性が微妙に残っている 高温極限
+$m_A^2$ ありバージョンでの解析式はまだ導出できていない </p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-24 14:27:12 +0900 JST'>February 24, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to 散乱のゼロ温度断面積" href="https://eureka1128.github.io/posts/20250225/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">立ち止まって研究方針を確認
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>研究会と修論で研究が止まっていたので、再始動の前に色々確認。
+抱えている問題 今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？ Rackerさんの論文との差別化は？ どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。
+論文投稿までのロードマップ(とタイムスケジュール) 散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み) ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み) すでに行っている数値計算と比較し、解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\eta$ のmass,右巻きの階層性,左巻きのmass, $\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\cdots$ 論文を書き始める </p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-24 14:27:12 +0900 JST'>February 24, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to 立ち止まって研究方針を確認" href="https://eureka1128.github.io/posts/20250224/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PaperModの諸設定
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>記事に目次を導入する 記事に ShowToc = true を追記。例 ↓
+&#43;&#43;&#43; date = &#39;2025-02-22T15:41:51&#43;09:00&#39; draft = false title = &#39;KEK-PH2025の次の日&#39; ShowToc = true #ここを追記 &#43;&#43;&#43; 右上にarchiveを導入する content/archives.md を作り、次の内容を書き込む。
+--- title: &#34;Archive&#34; layout: &#34;archives&#34; url: &#34;/archives/&#34; summary: archives --- hugo.tomlに以下の内容を追記。
+[[menu.main]] identifier = &#34;archives&#34; name = &#34;Archive&#34; url = &#34;/archives/&#34; weight = 10 参考:
+Archives Layout – PaperMod 右上にtagを導入する content/tags/_index.md を作り、次の内容を書き込む。
+--- title: &#34;Tags&#34; date: 2025-02-25T19:10:49&#43;09:00 draft: false description: Example description. --- 各記事に tags = [&#39;Tag A&#39;, &#39;Tag B&#39;] を追記。例 ↓
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-23 18:42:12 +0900 JST'>February 23, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to PaperModの諸設定" href="https://eureka1128.github.io/posts/20250223/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">KEK-PH2025の次の日
     </h2>
   </header>
@@ -161,41 +222,6 @@
   </div>
   <footer class="entry-footer"><span title='2025-02-22 15:41:51 +0900 JST'>February 22, 2025</span></footer>
   <a class="entry-link" aria-label="post link to KEK-PH2025の次の日" href="https://eureka1128.github.io/posts/20250222/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">散乱のゼロ温度断面積
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>$\cos\theta$ での解析積分を実行して、ゼロ温度断面積を求めたい。 元々ゼロ温度断面積は数値積分を行っていたのだが、レプトンが飛ぶ項に関して $s=M_1$ 付近に発散があった(詳細はtexを。これもややこしい話なので)。
-この処理のために $m_A^2\neq 0$ としてゲージボソンに微小な質量を持たせることにしたが、それでもピークが鋭く、区分求積の短冊の幅を限界まで小さくしても積分値が収束しない。そこで、解析的に積分を行うことにした。
-解析積分の進捗状況 振幅の二乗
-山中さんの式と一致。クロスチェック完了 $\eta$ が飛ぶ項と干渉項の和
-解析積分の結果が数値積分の結果と合わない 数値積分 -$m_A$ を考慮できていない
-レプトンが飛ぶ項
-解析積分の表式はmathematicaの結果と一致。 しかし、数値を出力すると、$m_A$ の依存性が微妙に残っている 高温極限
-$m_A$ ありバージョンでの解析式はまだ導出できていない </p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-24 14:27:12 +0900 JST'>February 24, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to 散乱のゼロ温度断面積" href="https://eureka1128.github.io/posts/20250224/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">立ち止まって研究の方針を確認
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>研究会と修論で研究が止まっていたので、再始動の前に色々確認。
-抱えている問題 今の結果だと $N_2, N_3$ からの寄与がある → ニュートリノ湯川のパラメータを変えれば回避可能。 根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。 $\eta$ が持つレプトン数について 散乱の効果を入れて $K$ を小さくする どうすれば論文になるのか？ Rackerさんの論文との差別化は？ どういう結論にしたいのか？パラメータ領域の探索？ タスクの全体像がわからないのでタイムスケジュール感もわからない。
-論文投稿までのロードマップ(とタイムスケジュール) 散乱の計算 $m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み) ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み) すでに行っている数値計算と比較し、解析計算が正しいことを確かめる 熱平均断面積の計算 他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず) ニュートリノ湯川をふる 右巻きmass, $\eta$ のmass,右巻きの階層性,左巻きのmass, $\lambda_5$ の値はどうする？ 山中さんにボルツマン方程式を解いてもらう $\cdots$ 論文を書き始める おまけ : papermodで数式を導入する ちょっと詰まったので記録しておく。
-themes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css&#34; integrity=&#34;sha384-zh0CIslj&#43;VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib&#34; crossorigin=&#34;anonymous&#34;&gt; &lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js&#34; integrity=&#34;sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt; &lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js&#34; integrity=&#34;sha384-hCXGrW6PitJEwbkoStFjeJxv&#43;fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt; &lt;script&gt; document.addEventListener(&#34;DOMContentLoaded&#34;, function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: &#39;$$&#39;, right: &#39;$$&#39;, display: true}, {left: &#39;$&#39;, right: &#39;$&#39;, display: false}, {left: &#39;\\(&#39;, right: &#39;\\)&#39;, display: false}, {left: &#39;\\[&#39;, right: &#39;\\]&#39;, display: true} ], // • rendering keys, e.g.: throwOnError : false }); }); &lt;/script&gt; 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the &lt;head&gt;&lt;/head&gt; section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial &#34;math.html&#34; . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ &#43;&#43;&#43; date = &#34;2025-02-23T18:42:12&#43;09:00&#34; draft = false title = &#34;立ち止まって研究の方針を確認&#34; math = true &#43;&#43;&#43; hugo.tomlに以下のように[params]を追記 baseURL = &#39;https://eureka1128.github.io/&#39; languageCode = &#39;ja-jp&#39; title = &#39;ネムリカの記録&#39; theme = &#39;PaperMod&#39; [params] ##ここの2行を追記 math = true これでうまくいきました。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-23 18:42:12 +0900 JST'>February 23, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to 立ち止まって研究の方針を確認" href="https://eureka1128.github.io/posts/20250223/"></a>
 </article>
     </main>
     
