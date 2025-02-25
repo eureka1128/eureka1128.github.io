@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>PaperModの諸設定 | ネムリカの記録</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="HUGO">
 <meta name="description" content="記事に目次を導入する
 記事に ShowToc = true  を追記。例 ↓
 &#43;&#43;&#43;
@@ -123,6 +123,7 @@ Archives Layout – PaperMod 右上にtagを導入する content/tags/_index.md 
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-02-23T18:42:12+09:00">
     <meta property="article:modified_time" content="2025-02-23T18:42:12+09:00">
+    <meta property="article:tag" content="HUGO">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PaperModの諸設定">
 <meta name="twitter:description" content="記事に目次を導入する
@@ -192,7 +193,7 @@ description: Example description.
   "name": "PaperModの諸設定",
   "description": "記事に目次を導入する 記事に ShowToc = true を追記。例 ↓\n+++ date = \u0026#39;2025-02-22T15:41:51+09:00\u0026#39; draft = false title = \u0026#39;KEK-PH2025の次の日\u0026#39; ShowToc = true #ここを追記 +++ 右上にarchiveを導入する content/archives.md を作り、次の内容を書き込む。\n--- title: \u0026#34;Archive\u0026#34; layout: \u0026#34;archives\u0026#34; url: \u0026#34;/archives/\u0026#34; summary: archives --- hugo.tomlに以下の内容を追記。\n[[menu.main]] identifier = \u0026#34;archives\u0026#34; name = \u0026#34;Archive\u0026#34; url = \u0026#34;/archives/\u0026#34; weight = 10 参考:\nArchives Layout \u0026ndash; PaperMod 右上にtagを導入する content/tags/_index.md を作り、次の内容を書き込む。\n--- title: \u0026#34;Tags\u0026#34; date: 2025-02-25T19:10:49+09:00 draft: false description: Example description. --- 各記事に tags = ['Tag A', 'Tag B'] を追記。例 ↓\n",
   "keywords": [
-    
+    "HUGO"
   ],
   "articleBody": "記事に目次を導入する 記事に ShowToc = true を追記。例 ↓\n+++ date = '2025-02-22T15:41:51+09:00' draft = false title = 'KEK-PH2025の次の日' ShowToc = true #ここを追記 +++ 右上にarchiveを導入する content/archives.md を作り、次の内容を書き込む。\n--- title: \"Archive\" layout: \"archives\" url: \"/archives/\" summary: archives --- hugo.tomlに以下の内容を追記。\n[[menu.main]] identifier = \"archives\" name = \"Archive\" url = \"/archives/\" weight = 10 参考:\nArchives Layout – PaperMod 右上にtagを導入する content/tags/_index.md を作り、次の内容を書き込む。\n--- title: \"Tags\" date: 2025-02-25T19:10:49+09:00 draft: false description: Example description. --- 各記事に tags = ['Tag A', 'Tag B'] を追記。例 ↓\n+++ date = '2025-02-22T15:41:51+09:00' draft = false title = 'KEK-PH2025の次の日' tags = ['Tag A', 'Tag B'] #ここを追記 +++ hugo.tomlに以下の内容を追記。\n[[menu.main]] identifier = \"tags\" name = \"Tags\" url = \"/tags/\" weight = 20 参考:\nAdd description to taxonomy “tags” term Taxonomies 数式を導入する themes/papermod/layouts/partials/math.html を作成 math.htmlに次の内容をコピー 同じくpartialsフォルダ内にある、extend_head.htmlに次の行を追加 {{- /* Head custom content area start */ -}} {{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the section of every page. */ -}} {{- /* Can be overwritten by partial with the same name in the global layouts. */ -}} {{ partial \"math.html\" . }} # ここを追加 {{- /* Head custom content area end */ -}} contens内のmdファイルに math = true を追記。例↓ +++ date = \"2025-02-23T18:42:12+09:00\" draft = false title = \"立ち止まって研究の方針を確認\" math = true +++ hugo.tomlに以下のように[params]を追記 baseURL = 'https://eureka1128.github.io/' languageCode = 'ja-jp' title = 'ネムリカの記録' theme = 'PaperMod' [params] ##ここの2行を追記 math = true 参考:\nMath Typesetting Auto-render Extension – KaTeX おまけ : hugo.tomlの中身 baseURL = 'https://eureka1128.github.io/' languageCode = 'ja-jp' title = 'ネムリカの記録' theme = 'PaperMod' [params] math = true ShowCodeCopyButtons = true # コードにコピーボタンを表示 [params.homeInfoParams] Title = \"ネムリカの記録\" Content = \"自分用のメモであり、誰かに読まれることを想定して書いたものではない。\" [[menu.main]] identifier = \"archives\" name = \"Archive\" url = \"/archives/\" weight = 10 [[menu.main]] identifier = \"tags\" name = \"Tags\" url = \"/tags/\" weight = 20 おまけ : バッククォート macではshift + @でバッククォートが打てる。\n",
   "wordCount" : "361",
@@ -449,6 +450,7 @@ weight = 20
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://eureka1128.github.io/tags/hugo/">HUGO</a></li>
     </ul>
   </footer>
 </article>
