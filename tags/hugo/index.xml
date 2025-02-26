@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>HUGO on ネムリカの記録</title>
+    <title>Hugo on ネムリカの記録</title>
     <link>https://eureka1128.github.io/tags/hugo/</link>
-    <description>Recent content in HUGO on ネムリカの記録</description>
+    <description>Recent content in Hugo on ネムリカの記録</description>
     <generator>Hugo -- 0.144.2</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 23 Feb 2025 18:42:12 +0900</lastBuildDate>

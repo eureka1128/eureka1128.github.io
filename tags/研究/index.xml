@@ -6,12 +6,12 @@
     <description>Recent content in 研究 on ネムリカの記録</description>
     <generator>Hugo -- 0.144.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 24 Feb 2025 14:27:12 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 14:27:12 +0900</lastBuildDate>
     <atom:link href="https://eureka1128.github.io/tags/%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>散乱のゼロ温度断面積</title>
       <link>https://eureka1128.github.io/posts/20250225/</link>
-      <pubDate>Mon, 24 Feb 2025 14:27:12 +0900</pubDate>
+      <pubDate>Tue, 25 Feb 2025 14:27:12 +0900</pubDate>
       <guid>https://eureka1128.github.io/posts/20250225/</guid>
       <description>&lt;p&gt;$\cos\theta$ での解析積分を実行して、ゼロ温度断面積を求めたい。
 元々ゼロ温度断面積は数値積分を行っていたのだが、レプトンが飛ぶ項に関して $s=M_1$ 付近に発散があった(詳細はtexを。これもややこしい話なので)。&lt;/p&gt;
@@ -34,6 +34,7 @@
 &lt;p&gt;数値積分&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$m_A^2$ を残した式に置き換えがまだできていない&lt;/li&gt;
+&lt;li&gt;無次元化して打ち込む&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -72,10 +73,14 @@ Rackerさんの論文との差別化は？
 &lt;ol&gt;
 &lt;li&gt;散乱の計算
 &lt;ul&gt;
-&lt;li&gt;$m_A$ を入れて、振幅の二乗の段階でクロスチェック(済み)&lt;/li&gt;
-&lt;li&gt;ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算(済み)&lt;/li&gt;
+&lt;li&gt;~~ $m_A$ を入れて、振幅の二乗の段階でクロスチェック ~~ (2025.2.23済み)&lt;/li&gt;
+&lt;li&gt;~~ ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算 ~~ (2025.2.23済み)&lt;/li&gt;
 &lt;li&gt;すでに行っている数値計算と比較し、解析計算が正しいことを確かめる&lt;/li&gt;
-&lt;li&gt;熱平均断面積の計算&lt;/li&gt;
+&lt;li&gt;熱平均断面積の計算
+&lt;ul&gt;
+&lt;li&gt;手計算で解析的に低温極限、高温極限をとったものと、数値的に低温極限・高温極限をとったものを比較&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと
 していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず)&lt;/li&gt;
 &lt;/ul&gt;
@@ -83,6 +88,7 @@ Rackerさんの論文との差別化は？
 &lt;li&gt;ニュートリノ湯川をふる
 &lt;ul&gt;
 &lt;li&gt;右巻きmass, $\eta$ のmass,右巻きの階層性,左巻きのmass, $\lambda_5$ の値はどうする？&lt;/li&gt;
+&lt;li&gt;Casas Ibarra parametrization の理解が浅い&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;山中さんにボルツマン方程式を解いてもらう&lt;/li&gt;
