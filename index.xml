@@ -6,8 +6,131 @@
     <description>Recent content on ネムリカの記録</description>
     <generator>Hugo -- 0.144.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 23 Feb 2025 18:42:12 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 14:27:12 +0900</lastBuildDate>
     <atom:link href="https://eureka1128.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>散乱のゼロ温度断面積</title>
+      <link>https://eureka1128.github.io/posts/20250225/</link>
+      <pubDate>Tue, 25 Feb 2025 14:27:12 +0900</pubDate>
+      <guid>https://eureka1128.github.io/posts/20250225/</guid>
+      <description>&lt;p&gt;$\cos\theta$ での解析積分を実行して、ゼロ温度断面積を求めたい。
+元々ゼロ温度断面積は数値積分を行っていたのだが、レプトンが飛ぶ項に関して $s=M_1$ 付近に発散があった(詳細はtexを。これもややこしい話なので)。&lt;/p&gt;
+&lt;p&gt;この処理のために $m_A^2\neq 0$ としてゲージボソンに微小な質量を持たせることにしたが、それでもピークが鋭く、区分求積の短冊の幅を限界まで小さくしても積分値が収束しない。そこで、解析的に積分を行うことにした。&lt;/p&gt;
+&lt;h3 id=&#34;解析積分の進捗状況&#34;&gt;解析積分の進捗状況&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;振幅の二乗&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;山中さんの式と一致。クロスチェック完了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\eta$ が飛ぶ項と干渉項の和&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解析積分の結果が数値積分の結果と合わない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数値積分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$m_A^2$ を残した式に置き換えがまだできていない&lt;/li&gt;
+&lt;li&gt;無次元化して打ち込む&lt;/li&gt;
+&lt;li&gt;でも振幅の二乗に $1/(1+cos+\epsilon)$ のエンハンスがあり、こいつのせいでいくら刻み幅を工夫しても積分値が収束しないんだよな。
+だからあんまり数値積分の結果と解析積分の結果を見比べる意味がないかもしれん。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;レプトンが飛ぶ項&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解析積分の表式はmathematicaの結果と一致。&lt;/li&gt;
+&lt;li&gt;しかし、数値を出力すると、$m_A$ の依存性が微妙に残っている&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;高温極限&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$m_A^2$ ありバージョンでの解析式はまだ導出できていない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>立ち止まって研究方針を確認</title>
+      <link>https://eureka1128.github.io/posts/20250224/</link>
+      <pubDate>Mon, 24 Feb 2025 14:27:12 +0900</pubDate>
+      <guid>https://eureka1128.github.io/posts/20250224/</guid>
+      <description>&lt;p&gt;研究会と修論で研究が止まっていたので、再始動の前に色々確認。&lt;/p&gt;
+&lt;h2 id=&#34;抱えている問題&#34;&gt;抱えている問題&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;KEK-PHでの進藤さんからの質問「ニュートリノ湯川を見ると、N2、N3の値が大きいので、$\eta\eta\to hh$ の散乱が効くのでは？」&lt;/p&gt;
+&lt;p&gt;⇒ 確かにこれは効く。根本的に避けるには右巻きのmassを離せば良いが、すると今度はニュートリノ振動が再現できなくなる。
+今の計算では λ5=1.0e-7 なので、ニュートリノ振動が再現するように湯川カップリングが大きくなってしまっている。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;η が持つレプトン数について&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;散乱の効果を入れてKを小さくする&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;右巻きニュートリノの質量&#34;&gt;右巻きニュートリノの質量&lt;/h3&gt;
+&lt;p&gt;η はDMとみなすか？ ⇒ $\eta$ の質量がTeV程度なら、対消滅しきれずに宇宙に残る(普通のWIMPシナリオと同じ)。η はN1のmassより軽い(上限)。&lt;/p&gt;
+&lt;p&gt;ニュートリノ振動の観測値を説明できる $\lambda_5, N_1, N_2, N_3$ ,ニュートリノ湯川のカップリングを設定しなければならない。
+$\lambda_5$ を大きく($\lambda_5\sim 1$ 程度)すると、$N_2,N_3$ を重くすることができる。これにより、ニュートリノ振動の観測値を説明しつつ、
+$N_1$ だけでレプトジェネシスをすればよくなる。この場合、ヒッグスのspectator効果の考察が必要となる。&lt;/p&gt;
+&lt;h3 id=&#34;lambda_5-が大きいと&#34;&gt;$\lambda_5$ が大きいと&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;$\eta$ 数ができる&lt;/li&gt;
+&lt;li&gt;$\eta\eta\to hh$ によりヒッグス数ができる&lt;/li&gt;
+&lt;li&gt;ヒッグスのアシンメトリーがクォーク(主にトップ)などのSM粒子に流れる&lt;/li&gt;
+&lt;li&gt;B-Lに流れる《spectator効果》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;$\eta\eta\to\ell\ell$ は効かない。ニュートリノ湯川が小さいし、N2、N3も重いので。&lt;/li&gt;
+&lt;li&gt;$\eta$ のヒッグスへのconvertが先かフリーズアウトが先かは計算してみないとわからない。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lambda_5-が小さいと&#34;&gt;$\lambda_5$ が小さいと&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;$\eta$ 数はそのまま残る&lt;/li&gt;
+&lt;li&gt;$\eta\eta\to\ell\ell$ でN2、N3がとぶモードが効いてくる《washout》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;変動があるとしたらおそらく10%程度? ジャーナルで取り上げた論文に詳細あり。&lt;/li&gt;
+&lt;li&gt;散乱でN2、N3の効果を考えるとなると、計算の全体を通してN2、N3を考慮しないと一貫性がなくなる。これは大変&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;先行研究rackerさんとの差別化--どういう結論にしたいか&#34;&gt;先行研究(Rackerさん)との差別化 / どういう結論にしたいか&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;右巻きニュートリノを熱化するのに散乱過程を入れる&lt;/li&gt;
+&lt;li&gt;右巻きニュートリノのmassをいくつか変えてみて、それぞれの温度帯ごとに異なる転換行列を用いて何パターンかやってみる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;論文投稿までのロードマップとタイムスケジュール&#34;&gt;論文投稿までのロードマップ(とタイムスケジュール)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;右巻きニュートリノを熱化するための、ゲージボソンとの散乱の計算
+&lt;ul&gt;
+&lt;li&gt;$m_A$ を入れて、振幅の二乗の段階でクロスチェック (2025.2.23完了)&lt;/li&gt;
+&lt;li&gt;ゼロ温度断面積の $\cos\theta$ 積分を解析的に計算 (2025.2.23完了)&lt;/li&gt;
+&lt;li&gt;すでに行っている数値計算と比較し、解析計算が正しいことを確かめる (進行中)&lt;/li&gt;
+&lt;li&gt;熱平均断面積の計算
+&lt;ul&gt;
+&lt;li&gt;手計算で解析的に低温極限、高温極限をとったものと、数値的に低温極限・高温極限をとったものを比較&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;他に2つモードがあるので、それらの熱平均断面積も求める( $m_A$ の質量をmasslessと
+していた時の結果は確か、すでに計算しているモードを何倍かするだけでよかったはず)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ニュートリノ湯川をふる
+&lt;ul&gt;
+&lt;li&gt;右巻きmass, $\eta$ のmass,右巻きの階層性,左巻きのmass, $\lambda_5$ の値はどうする？&lt;/li&gt;
+&lt;li&gt;Casas Ibarra parametrization の理解が浅い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;山中さんにボルツマン方程式を解いてもらう&lt;/li&gt;
+&lt;li&gt;$\cdots$&lt;/li&gt;
+&lt;li&gt;論文を書き始める&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     <item>
       <title>PaperModの諸設定</title>
       <link>https://eureka1128.github.io/posts/20250223/</link>
